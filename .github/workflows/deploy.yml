@@ -18,9 +18,10 @@ jobs:
           host: 103.168.146.195
           username: eliaulia
           password: ${{ secrets.SSH_PASSWORD }}
-         script: |
+          script: |
             cd /home/eliaulia/UAS_WEB
             git pull origin main
-            docker compose down || true
-            docker compose pull
-            docker compose up -d
+            # Menggunakan full path untuk docker dan docker-compose
+            /usr/bin/docker compose down || true
+            /usr/bin/docker compose pull
+            /usr/bin/docker compose up -d
