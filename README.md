@@ -1,4 +1,4 @@
-### Draf `README.md` (Copy-Paste ke proyekmu)
+### `README.md`
 
 ```markdown
 # 🚀 Deployment Proyek UAS: Web Portofolio
