@@ -18,9 +18,9 @@ jobs:
           host: 103.168.146.195
           username: eliaulia
           password: ${{ secrets.SSH_PASSWORD }}
-          script: |
+         script: |
             cd /home/eliaulia/UAS_WEB
             git pull origin main
-            docker compose down
+            docker compose down || true
             docker compose pull
             docker compose up -d
