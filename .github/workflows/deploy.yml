@@ -21,5 +21,6 @@ jobs:
           script: |
             cd /home/eliaulia/UAS_WEB
             git pull origin main
+            docker compose down
             docker compose pull
             docker compose up -d
