@@ -22,7 +22,7 @@ jobs:
           port: 22
           script: |
             
-            cd /home/eliaulia/uaseli
+            cd /home/eliaulia/UAS_WEB
             
             
             git reset --hard origin/main
